@@ -1,0 +1,5049 @@
+<table class="fullset-table" dir="ltr" border="1" cellspacing="0" cellpadding="0">
+<colgroup>
+<col width="230" />
+<col width="122" />
+<col width="304" /></colgroup>
+<tbody>
+<tr>
+<td><em><strong>Variable</strong></em></td>
+<td><em><strong>Units</strong></em></td>
+<td><em><strong>Description</strong></em></td>
+</tr>
+<tr>
+<td><strong>TIMEKEEPING</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TIMESTAMP</td>
+<td>YYYYMMDDHHMM</td>
+<td>ISO timestamp &#8211; short format</td>
+</tr>
+<tr>
+<td>TIMESTAMP_START</td>
+<td>YYYYMMDDHHMM</td>
+<td>ISO timestamp start of averaging period &#8211; short format</td>
+</tr>
+<tr>
+<td>TIMESTAMP_END</td>
+<td>YYYYMMDDHHMM</td>
+<td>ISO timestamp end of averaging period &#8211; short format</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>MICROMETEOROLOGICAL</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>TA_F_MDS</td>
+<td></td>
+<td>Air temperature, gapfilled using MDS method</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>deg C</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>TA_F_MDS_QC</td>
+<td></td>
+<td>Quality flag for TA_F_MDS</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>TA_F_MDS_NIGHT</td>
+<td></td>
+<td>Average nighttime TA_F_MDS</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>TA_F_MDS_NIGHT_SD</td>
+<td></td>
+<td>Standard deviation for TA_F_MDS_NIGHT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average SD from daily data</td>
+</tr>
+<tr>
+<td>TA_F_MDS_NIGHT_QC</td>
+<td></td>
+<td>Quality flag for TA_F_MDS_NIGHT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>TA_F_MDS_DAY</td>
+<td></td>
+<td>Average daytime TA_F_MDS</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>TA_F_MDS_DAY_SD</td>
+<td></td>
+<td>Standard deviation for TA_F_MDS_DAY</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average SD from daily data</td>
+</tr>
+<tr>
+<td>TA_F_MDS_DAY_QC</td>
+<td></td>
+<td>Quality flag for TA_F_MDS_DAY</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>TA_ERA</td>
+<td></td>
+<td>Air temperature, downscaled from ERA, linearly regressed using measured only site data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>deg C</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>TA_ERA_NIGHT</td>
+<td></td>
+<td>Average nighttime TA_ERA</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>TA_ERA_NIGHT_SD</td>
+<td></td>
+<td>Standard deviation for TA_ERA_NIGHT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average SD from daily data</td>
+</tr>
+<tr>
+<td>TA_ERA_DAY</td>
+<td></td>
+<td>Average daytime TA_ERA</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>TA_ERA_DAY_SD</td>
+<td></td>
+<td>Standard deviation for TA_ERA_DAY</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average SD from daily data</td>
+</tr>
+<tr>
+<td>TA_F</td>
+<td></td>
+<td>Air temperature, consolidated from TA_F_MDS and TA_ERA</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>deg C</td>
+<td>TA_F_MDS used if TA_F_MDS_QC is 0 or 1</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>TA_F_QC</td>
+<td></td>
+<td>Quality flag for TA_F</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = downscaled from ERA</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>TA_F_NIGHT</td>
+<td></td>
+<td>Average nighttime TA_F</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>TA_F_NIGHT_SD</td>
+<td></td>
+<td>Standard deviation for TA_F_NIGHT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average SD from daily data</td>
+</tr>
+<tr>
+<td>TA_F_NIGHT_QC</td>
+<td></td>
+<td>Quality flag for TA_F_NIGHT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>TA_F_DAY</td>
+<td></td>
+<td>Average daytime TA_F</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>TA_F_DAY_SD</td>
+<td></td>
+<td>Standard deviation for TA_F_DAY</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average SD from daily data</td>
+</tr>
+<tr>
+<td>TA_F_DAY_QC</td>
+<td></td>
+<td>Quality flag for TA_F_DAY</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>SW_IN_POT</td>
+<td></td>
+<td>Shortwave radiation, incoming, potential (top of atmosphere)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>W m-2</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>SW_IN_F_MDS</td>
+<td></td>
+<td>Shortwave radiation, incoming, gapfilled using MDS (negative values set to zero, e.g., negative values from instrumentation noise)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>SW_IN_F_MDS_QC</td>
+<td></td>
+<td>Quality flag for SW_IN_F_MDS</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>SW_IN_ERA</td>
+<td></td>
+<td>Shortwave radiation, incoming, downscaled from ERA, linearly regressed using measured only site data (negative values set to zero)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>SW_IN_F</td>
+<td></td>
+<td>Shortwave radiation, incoming consolidated from SW_IN_F_MDS and SW_IN_ERA (negative values set to zero)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td>SW_IN_F_MDS used if SW_IN_F_MDS_QC is 0 or 1</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>SW_IN_F_QC</td>
+<td></td>
+<td>Quality flag for SW_IN_F</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = downscaled from ERA</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>LW_IN_F_MDS</td>
+<td></td>
+<td>Longwave radiation, incoming, gapfilled using MDS</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>LW_IN_F_MDS_QC</td>
+<td></td>
+<td>Quality flag for LW_IN_F_MDS</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>LW_IN_ERA</td>
+<td></td>
+<td>Longwave radiation, incoming, downscaled from ERA, linearly regressed using measured only site data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>LW_IN_F</td>
+<td></td>
+<td>Longwave radiation, incoming, consolidated from LW_IN_F_MDS and LW_IN_ERA</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td>LW_IN_F_MDS used if LW_IN_F_MDS_QC is 0 or 1</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>LW_IN_F_QC</td>
+<td></td>
+<td>Quality flag for LW_IN_F</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = downscaled from ERA</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>LW_IN_JSB</td>
+<td></td>
+<td>Longwave radiation, incoming, calculated from TA_F_MDS, SW_IN_F_MDS, VPD_F_MDS and SW_IN_POT using the JSBACH algorithm (Sonke Zaehle)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>LW_IN_JSB_QC</td>
+<td></td>
+<td>Quality flag for LW_IN_JSB</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>highest from TA_F_MDS_QC, SW_IN_F_MDS_QC, and VPD_F_MDS_QC, poorest quality prevails</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of calculated LW_IN starting from measured and good quality gapfill drivers data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage ofcalculated LW_IN starting from measured and good quality gapfill drivers data (average from daily data)</td>
+</tr>
+<tr>
+<td>LW_IN_JSB_ERA</td>
+<td></td>
+<td>Longwave radiation, incoming, downscaled from ERA, linearly regressed using site level LW_IN_JSB calculated from measured only drivers</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>LW_IN_JSB_F</td>
+<td></td>
+<td>Longwave radiation, incoming, consolidated from LW_IN_JSB and LW_IN_JSB_ERA</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td>LW_IN_JSB used if LW_IN_JSB_QC is 0 or 1</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>LW_IN_JSB_F_QC</td>
+<td></td>
+<td>Quality flag for LW_IN_JSB_F</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = calculated from measured drivers; 1 = calculated from good quality gapfilled drivers; 2: downscaled from ERA</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>VPD_F_MDS</td>
+<td></td>
+<td>Vapor Pressure Deficit, gapfilled using MDS</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>hPa</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>hPa</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>hPa</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>VPD_F_MDS_QC</td>
+<td></td>
+<td>Quality flag for VPD_F_MDS</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>VPD_ERA</td>
+<td></td>
+<td>Vapor Pressure Deficit, downscaled from ERA, linearly regressed using measured only site data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>hPa</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>hPa</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>hPa</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>VPD_F</td>
+<td></td>
+<td>Vapor Pressure Deficit consolidated from VPD_F_MDS and VPD_ERA</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>hPa</td>
+<td>VPD_F_MDS used if VPD_F_MDS_QC is 0 or 1</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>hPa</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>hPa</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>VPD_F_QC</td>
+<td></td>
+<td>Quality flag for VPD_F</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = downscaled from ERA</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>PA</td>
+<td></td>
+<td>Atmospheric pressure</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>kPa</td>
+<td></td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>kPa</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>PA_ERA</td>
+<td></td>
+<td>Atmospheric pressure, downscaled from ERA, linearly regressed using measured only site data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>kPa</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>kPa</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>kPa</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>PA_F</td>
+<td></td>
+<td>Atmospheric pressure consolidated from PA and PA_ERA</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>kPa</td>
+<td>PA used if measured</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>kPa</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>kPa</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>PA_F_QC</td>
+<td></td>
+<td>Quality flag for PA_F</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 2 = downscaled from ERA</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured data (average from daily data)</td>
+</tr>
+<tr>
+<td>P</td>
+<td></td>
+<td>Precipitation</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>mm</td>
+<td></td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>P_ERA</td>
+<td></td>
+<td>Precipitation, downscaled from ERA, linearly regressed using measured only site data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>mm</td>
+<td>(mm per dataset resolution: either hour or half-hour)</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>mm d-1</td>
+<td>sum from half-hourly data (mm per day)</td>
+</tr>
+<tr>
+<td>WW-MM</p>
+<p>YY</td>
+<td>mm d-1</p>
+<p>mm y-1</td>
+<td>average from daily data (mm per day)</p>
+<p>sum from daily data (mm per year)</td>
+</tr>
+<tr>
+<td>P_F</td>
+<td></td>
+<td>Precipitation consolidated from P and P_ERA</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>mm</td>
+<td>P used if measured (mm per dataset resolution: either hour or half-hour)</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>mm d-1</td>
+<td>sum from half-hourly data (mm per day)</td>
+</tr>
+<tr>
+<td>WW-MM</p>
+<p>YY</td>
+<td>mm d-1</p>
+<p>mm y-1</td>
+<td>average from daily data (mm per day)</p>
+<p>sum from daily data (mm per year)</td>
+</tr>
+<tr>
+<td>P_F_QC</td>
+<td></td>
+<td>Quality flag for P_F</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 2 = downscaled from ERA</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured data (average from daily data)</td>
+</tr>
+<tr>
+<td>WS</td>
+<td></td>
+<td>Wind speed</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>m s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>m s-1</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>WS_ERA</td>
+<td></td>
+<td>Wind speed, downscaled from ERA, linearly regressed using measured only site data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>m s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>m s-1</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>m s-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>WS_F</td>
+<td></td>
+<td>Wind speed, consolidated from WS and WS_ERA</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>m s-1</td>
+<td>WS used if measured</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>m s-1</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>m s-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>WS_F_QC</td>
+<td></td>
+<td>Quality flag of WS_F</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 2 = downscaled from ERA</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured data (average from daily data)</td>
+</tr>
+<tr>
+<td>WD</td>
+<td></td>
+<td>Wind direction</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>Decimal degrees</td>
+<td></td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>Decimal degrees</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>RH</td>
+<td></td>
+<td>Relative humidity, range 0-100</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>%</td>
+<td></td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>%</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>USTAR</td>
+<td></td>
+<td>Friction velocity</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>m s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>m s-1</td>
+<td>average from half-hourly data (only days with more than 50% records available)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>m s-1</td>
+<td>average from daily data (only periods with more than 50% records available)</td>
+</tr>
+<tr>
+<td>USTAR_QC</td>
+<td></td>
+<td>Quality flag of USTAR</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (measured)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (average from daily data)</td>
+</tr>
+<tr>
+<td>NETRAD</td>
+<td></td>
+<td>Net radiation</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data (only days with more than 50% records available)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data (only periods with more than 50% records available)</td>
+</tr>
+<tr>
+<td>NETRAD_QC</td>
+<td></td>
+<td>Quality flag of NETRAD</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (measured)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (average from daily data)</td>
+</tr>
+<tr>
+<td>PPFD_IN</td>
+<td></td>
+<td>Photosynthetic photon flux density, incoming</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>µmolPhoton m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>µmolPhoton m-2 s-1</td>
+<td>average from half-hourly data (only days with more than 50% records available)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>µmolPhoton m-2 s-1</td>
+<td>average from daily data (only periods with more than 50% records available)</td>
+</tr>
+<tr>
+<td>PPFD_IN_QC</td>
+<td></td>
+<td>Quality flag of PPFD_IN</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (measured)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (average from daily data)</td>
+</tr>
+<tr>
+<td>PPFD_DIF</td>
+<td></td>
+<td>Photosynthetic photon flux density, diffuse incoming</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>µmolPhoton m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>µmolPhoton m-2 s-1</td>
+<td>average from half-hourly data (only days with more than 50% records available)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>µmolPhoton m-2 s-1</td>
+<td>average from daily data (only periods with more than 50% records available)</td>
+</tr>
+<tr>
+<td>PPFD_DIF_QC</td>
+<td></td>
+<td>Quality flag of PPFD_DIF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (measured)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (average from daily data)</td>
+</tr>
+<tr>
+<td>PPFD_OUT</td>
+<td></td>
+<td>Photosynthetic photon flux density, outgoing</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>µmolPhoton m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>µmolPhoton m-2 s-1</td>
+<td>average from half-hourly data (only days with more than 50% records available)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>µmolPhoton m-2 s-1</td>
+<td>average from daily data (only periods with more than 50% records available)</td>
+</tr>
+<tr>
+<td>PPFD_OUT_QC</td>
+<td></td>
+<td>Quality flag of PPFD_OUT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (measured)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (average from daily data)</td>
+</tr>
+<tr>
+<td>SW_DIF</td>
+<td></td>
+<td>Shortwave radiation, diffuse incoming</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data (only days with more than 50% records available)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data (only periods with more than 50% records available)</td>
+</tr>
+<tr>
+<td>SW_DIF_QC</td>
+<td></td>
+<td>Quality flag of SW_DIF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (measured)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (average from daily data)</td>
+</tr>
+<tr>
+<td>SW_OUT</td>
+<td></td>
+<td>Shortwave radiation, outgoing</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data (only days with more than 50% records available)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data (only periods with more than 50% records available)</td>
+</tr>
+<tr>
+<td>SW_OUT_QC</td>
+<td></td>
+<td>Quality flag of SW_OUT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (measured)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (average from daily data)</td>
+</tr>
+<tr>
+<td>LW_OUT</td>
+<td></td>
+<td>Longwave radiation, outgoing</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data (only days with more than 50% records available)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data (only periods with more than 50% records available)</td>
+</tr>
+<tr>
+<td>LW_OUT_QC</td>
+<td></td>
+<td>Quality flag of LW_OUT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>not defined</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (measured)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of data available (average from daily data)</td>
+</tr>
+<tr>
+<td>CO2_F_MDS</td>
+<td></td>
+<td>CO2 mole fraction, gapfilled with MDS</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 mol-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 mol-1</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 mol-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>CO2_F_MDS_QC</td>
+<td></td>
+<td>Quality flag for CO2_F_MDS</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>TS_F_MDS_#</td>
+<td></td>
+<td>Soil temperature, gapfilled with MDS (numeric index &#8220;#&#8221; increases with the depth, 1 is shallowest)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>deg C</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>deg C</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>deg C</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>TS_F_MDS_#_QC</td>
+<td></td>
+<td>Quality flag for TS_F_MDS_#</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>SWC_F_MDS_#</td>
+<td></td>
+<td>Soil water content, gapfilled with MDS (numeric index &#8220;#&#8221; increases with the depth, 1 is shallowest)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>%</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>%</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>%</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>SWC_F_MDS_#_QC</td>
+<td></td>
+<td>Quality flag for SWC_F_MDS_#</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>ENERGY PROCESSING</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>G_F_MDS</td>
+<td></td>
+<td>Soil heat flux</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>G_F_MDS_QC</td>
+<td></td>
+<td>Quality flag of G_F_MDS</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>LE_F_MDS</td>
+<td></td>
+<td>Latent heat flux, gapfilled using MDS method</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>LE_F_MDS_QC</td>
+<td></td>
+<td>Quality flag for LE_F_MDS, LE_CORR, LE_CORR25, and LE_CORR75.</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>LE_CORR</td>
+<td></td>
+<td>Latent heat flux, corrected LE_F_MDS by energy balance closure correction factor</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>LE_CORR_25</td>
+<td></td>
+<td>Latent heat flux, corrected LE_F_MDS by energy balance closure correction factor, 25th percentile</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>LE_CORR_75</td>
+<td></td>
+<td>Latent heat flux, corrected LE_F_MDS by energy balance closure correction factor, 75th percentile</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>LE_RANDUNC</td>
+<td></td>
+<td>Random uncertainty of LE, from measured only data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td>uses only data point where LE_F_MDS_QC is 0 and two hierarchical methods (see header and LE_RANDUNC_METHOD)</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>W m-2</td>
+<td>from random uncertainty of individual half-hours (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used</td>
+</tr>
+<tr>
+<td>LE_RANDUNC_METHOD</td>
+<td></td>
+<td>Method used to estimate the random uncertainty of LE</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>1 = RANDUNC Method 1 (direct SD method), 2 = RANDUNC Method 2 (median SD method)</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>LE_RANDUNC_N</td>
+<td></td>
+<td>Number of half-hour data points used to estimate the random uncertainty of LE</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td></td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>LE_CORR_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for LE</td>
+</tr>
+<tr>
+<td>HH-DD</td>
+<td>W m-2</td>
+<td>[SQRT(LE_RANDUNC^2 + ((LE_CORR75 &#8211; LE_CORR25) / 1.349)^2)]</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>H_F_MDS</td>
+<td></td>
+<td>Sensible heat flux, gapfilled using MDS method</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>H_F_MDS_QC</td>
+<td></td>
+<td>Quality flag for H_F_MDS, H_CORR, H_CORR25, and H_CORR75.</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>H_CORR</td>
+<td></td>
+<td>Sensible heat flux, corrected H_F_MDS by energy balance closure correction factor</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>W m-2</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>H_CORR_25</td>
+<td></td>
+<td>Sensible heat flux, corrected H_F_MDS by energy balance closure correction factor, 25th percentile</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>H_CORR_75</td>
+<td></td>
+<td>Sensible heat flux, corrected H_F_MDS by energy balance closure correction factor, 75th percentile</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>W m-2</td>
+<td>average from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>H_RANDUNC</td>
+<td></td>
+<td>Random uncertainty of H, from measured only data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>W m-2</td>
+<td>uses only data point where H_F_MDS_QC is 0 and two hierarchical methods (see header and H_RANDUNC_METHOD)</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>W m-2</td>
+<td>from random uncertainty of individual half-hours (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used</td>
+</tr>
+<tr>
+<td>H_RANDUNC_METHOD</td>
+<td></td>
+<td>Method used to estimate the random uncertainty of H</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>1 = RANDUNC Method 1 (direct SD method), 2 = RANDUNC Method 2 (median SD method)</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>H_RANDUNC_N</td>
+<td></td>
+<td>Number of half-hour data points used to estimate the random uncertainty of H</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td></td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>H_CORR_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for H</td>
+</tr>
+<tr>
+<td>HH-DD</td>
+<td>W m-2</td>
+<td>[SQRT(H_RANDUNC^2 + ((H_CORR75 &#8211; H_CORR25) / 1.349)^2)]</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>EBC_CF_N</td>
+<td></td>
+<td>Number of data points used to calculate energy closure balance correction factor. Driver data points within sliding window (ECB_CF Method 1) or number of ECB_CF data points (for ECB_CF Methods 2 and 3)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>for ECB_CF Method 1 (minimum 5, maximum 93)</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>for ECB_CF Method 1 (minimum 5, maximum 15)</td>
+</tr>
+<tr>
+<td>WW&#8211;YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentages of half-hours used with respect to theoretical maximum number of half hours</td>
+</tr>
+<tr>
+<td>EBC_CF_METHOD</td>
+<td></td>
+<td>Method used to calculate the energy balance closure correction factor</td>
+</tr>
+<tr>
+<td>HH-YY</td>
+<td>nondimensional</td>
+<td>1 = ECB_CF Method 1, 2 = ECB_CF Method 2, 3 = ECB_CF Method 3. See general description for details</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NET ECOSYSTEM EXCHANGE</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>NIGHT</td>
+<td></td>
+<td>Flag indicating nighttime interval based on SW_IN_POT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = daytime, 1 = nighttime</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>NIGHT_D</td>
+<td></td>
+<td>Number of half hours classified as nighttime in the period, i.e., when SW_IN_POT is 0</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>number of half-hours</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>nondimensional</td>
+<td>number of halfhours (average of the daily data)</td>
+</tr>
+<tr>
+<td>YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DAY_D</td>
+<td></td>
+<td>Number of half hours classified as daytime in the period, i.e., when SW_IN_POT is greater than 0</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>number of half-hours</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>nondimensional</td>
+<td>number of halfhours (average of the daily data)</td>
+</tr>
+<tr>
+<td>YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>NIGHT_RANDUNC_N</td>
+<td></td>
+<td>Number of half hours classified as nighttime and used to calculate the aggregated random uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>number of half-hours</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>number of halfhours (average of the daily data)</td>
+</tr>
+<tr>
+<td>DAY_RANDUNC_N</td>
+<td></td>
+<td>Number of half hours classified as daytime and used to calculate the aggregated random uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>number of half-hours</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>number of halfhours (average of the daily data)</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF</td>
+<td></td>
+<td>Net Ecosystem Exchange, using Constant Ustar Threshold (CUT) across years, reference selected on the basis of the model efficiency (MEF). The MEF analysis is repeated for each time aggregation</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF</td>
+<td></td>
+<td>Net Ecosystem Exchange, using Variable Ustar Threshold (VUT) for each year, reference selected on the basis of the model efficiency (MEF). The MEF analysis is repeated for each time aggregation</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_QC</td>
+<td></td>
+<td>Quality flag for NEE_CUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_QC</td>
+<td></td>
+<td>Quality flag for NEE_VUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_RANDUNC</td>
+<td></td>
+<td>Random uncertainty for NEE_CUT_REF, from measured only data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>uses only data points where NEE_CUT_REF_QC is 0 and two hierarchical methods &#8211; see header and NEE_CUT_REF_RANDUNC_METHOD</td>
+</tr>
+<tr>
+<td>DD-MM</td>
+<td>gC m-2 d-1</td>
+<td>from random uncertainty of individual half-hours (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>from random uncertainty of individual half-hours (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_RANDUNC</td>
+<td></td>
+<td>Random uncertainty for NEE_VUT_REF, from measured only data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>uses only data points where NEE_VUT_REF_QC is 0 and two hierarchical methods &#8211; see header and NEE_VUT_REF_RANDUNC_METHOD</td>
+</tr>
+<tr>
+<td>DD-MM</td>
+<td>gC m-2 d-1</td>
+<td>from random uncertainty of individual half-hours (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>from random uncertainty of individual half-hours (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_RANDUNC_METHOD</td>
+<td></td>
+<td>Method used to estimate the random uncertainty of NEE_CUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>1 = RANDUNC Method 1 (direct SD method), 2 = RANDUNC Method 2 (median SD method)</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_RANDUNC_METHOD</td>
+<td></td>
+<td>Method used to estimate the random uncertainty of NEE_VUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>1 = RANDUNC Method 1 (direct SD method), 2 = RANDUNC Method 2 (median SD method)</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_RANDUNC_N</td>
+<td></td>
+<td>Number of data points used to estimate the random uncertainty of NEE_CUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td></td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_RANDUNC_N</td>
+<td></td>
+<td>Number of data points used to estimate the random uncertainty of NEE_VUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td></td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for NEE_CUT_REF, including random uncertainty and USTAR filtering uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_REF_RANDUNC^2 + ((NEE_CUT_84 &#8211; NEE_CUT_16) / 2)^2)] for each half-hour</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>[SQRT(NEE_CUT_REF_RANDUNC^2 + ((NEE_CUT_84 &#8211; NEE_CUT_16) / 2)^2)] for each day</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>[SQRT(NEE_CUT_REF_RANDUNC^2 + ((NEE_CUT_84 &#8211; NEE_CUT_16) / 2)^2)] for each week</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>[SQRT(NEE_CUT_REF_RANDUNC^2 + ((NEE_CUT_84 &#8211; NEE_CUT_16) / 2)^2)] for each month</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>[SQRT(NEE_CUT_REF_RANDUNC^2 + ((NEE_CUT_84 &#8211; NEE_CUT_16) / 2)^2)] for each year</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for NEE_VUT_REF, including random uncertainty and USTAR filtering uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_REF_RANDUNC^2 + ((NEE_VUT_84 &#8211; NEE_VUT_16) / 2)^2)] for each half-hour</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>[SQRT(NEE_VUT_REF_RANDUNC^2 + ((NEE_VUT_84 &#8211; NEE_VUT_16) / 2)^2)] for each day</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>[SQRT(NEE_VUT_REF_RANDUNC^2 + ((NEE_VUT_84 &#8211; NEE_VUT_16) / 2)^2)] for each week</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>[SQRT(NEE_VUT_REF_RANDUNC^2 + ((NEE_VUT_84 &#8211; NEE_VUT_16) / 2)^2)] for each month</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>[SQRT(NEE_VUT_REF_RANDUNC^2 + ((NEE_VUT_84 &#8211; NEE_VUT_16) / 2)^2)] for each year</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50</td>
+<td></td>
+<td>Net Ecosystem Exchange, using Constant Ustar Threshold (CUT) across years, from 50 percentile of USTAR threshold</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50</td>
+<td></td>
+<td>Net Ecosystem Exchange, using Variable Ustar Threshold (VUT) for each year, from 50 percentile of USTAR threshold</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_QC</td>
+<td></td>
+<td>Quality flag for NEE_CUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_QC</td>
+<td></td>
+<td>Quality flag for NEE_VUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_RANDUNC</td>
+<td></td>
+<td>Random uncertainty for NEE_CUT_USTAR50, from measured only data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>uses only data points where NEE_CUT_USTAR50_QC is 0 and two hierarchical methods &#8211; see header and NEE_CUT_USTAR50_RANDUNC_METHOD</td>
+</tr>
+<tr>
+<td>DD-MM</td>
+<td>gC m-2 d-1</td>
+<td>from random uncertainty of individual half-hours (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>from random uncertainty of individual half-hours (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_RANDUNC</td>
+<td></td>
+<td>Random uncertainty for NEE_VUT_USTAR50, from measured only data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>uses only data points where NEE_VUT_USTAR50_QC is 0 and two hierarchical methods see header and NEE_VUT_USTAR50_RANDUNC_METHOD</td>
+</tr>
+<tr>
+<td>DD-MM</td>
+<td>gC m-2 d-1</td>
+<td>from random uncertainty of individual half-hours (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>from random uncertainty of individual half-hours (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_RANDUNC_METHOD</td>
+<td></td>
+<td>Method used to estimate the random uncertainty of NEE_CUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>1 = RANDUNC Method 1 (direct SD method), 2 = RANDUNC Method 2 (median SD method)</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_RANDUNC_METHOD</td>
+<td></td>
+<td>Method used to estimate the random uncertainty of NEE_VUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>1 = RANDUNC Method 1 (direct SD method), 2 = RANDUNC Method 2 (median SD method)</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_RANDUNC_N</td>
+<td></td>
+<td>Number of half-hour data points used to estimate the random uncertainty of NEE_CUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td></td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_RANDUNC_N</td>
+<td></td>
+<td>Number of half-hour data points used to estimate the random uncertainty of NEE_VUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td></td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for NEE_CUT_USTAR50, including random uncertainty and USTAR filtering uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_RANDUNC^2 + ((NEE_CUT_84 &#8211; NEE_CUT_16) / 2)^2)] for each half-hour</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_RANDUNC^2 + ((NEE_CUT_84 &#8211; NEE_CUT_16) / 2)^2)] for each day</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_RANDUNC^2 + ((NEE_CUT_84 &#8211; NEE_CUT_16) / 2)^2)] for each week</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_RANDUNC^2 + ((NEE_CUT_84 &#8211; NEE_CUT_16) / 2)^2)] for each month</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_RANDUNC^2 + ((NEE_CUT_84 &#8211; NEE_CUT_16) / 2)^2)] for each year</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for NEE_VUT_USTAR50, including random uncertainty and USTAR filtering uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_USTAR50_RANDUNC^2 + ((NEE_VUT_84 &#8211; NEE_VUT_16) / 2)^2)] for each half-hour</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>[SQRT(NEE_VUT_USTAR50_RANDUNC^2 + ((NEE_VUT_84 &#8211; NEE_VUT_16) / 2)^2)] for each day</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>[SQRT(NEE_VUT_USTAR50_RANDUNC^2 + ((NEE_VUT_84 &#8211; NEE_VUT_16) / 2)^2)] for each week</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>[SQRT(NEE_VUT_USTAR50_RANDUNC^2 + ((NEE_VUT_84 &#8211; NEE_VUT_16) / 2)^2)] for each month</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>[SQRT(NEE_VUT_USTAR50_RANDUNC^2 + ((NEE_VUT_84 &#8211; NEE_VUT_16) / 2)^2)] for each year</td>
+</tr>
+<tr>
+<td>NEE_CUT_MEAN</td>
+<td></td>
+<td>Net Ecosystem Exchange, using Constant Ustar Threshold (CUT) across years, average from 40 NEE_CUT_XX versions</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from 40 half-hourly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 daily NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 weekly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 monthly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>average from 40 yearly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>NEE_VUT_MEAN</td>
+<td></td>
+<td>Net Ecosystem Exchange, using Variable Ustar Threshold (VUT) for each year, average from 40 NEE_VUT_XX versions</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from 40 half-hourly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 daily NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 weekly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 monthly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>average from 40 yearly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>NEE_CUT_MEAN_QC</td>
+<td></td>
+<td>Quality flag for NEE_CUT_MEAN, fraction between 0-1 indicating percentage of good quality data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>average of percentages of good data (NEE_CUT_XX_QC is 0 or 1) from 40 NEE_CUT_XX_QC</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>nondimensional</td>
+<td>average of 40 NEE_CUT_XX_QC for the period</td>
+</tr>
+<tr>
+<td>NEE_VUT_MEAN_QC</td>
+<td></td>
+<td>Quality flag for NEE_VUT_MEAN, fraction between 0-1 indicating percentage of good quality data</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>average of percentages of good data (NEE_VUT_XX_QC is 0 or 1) from 40 NEE_VUT_XX_QC</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>nondimensional</td>
+<td>average of 40 NEE_VUT_XX_QC for the period</td>
+</tr>
+<tr>
+<td>NEE_CUT_SE</td>
+<td></td>
+<td>Standard Error for NEE_CUT, calculated as SD(NEE_CUT_XX) / SQRT(40)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SE from 40 half-hourly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 daily NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 weekly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 monthly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>SE from 40 yearly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>NEE_VUT_SE</td>
+<td></td>
+<td>Standard Error for NEE_VUT, calculated as SD(NEE_VUT_XX) / SQRT(40)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SE from 40 half-hourly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 daily NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 weekly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 monthly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>SE from 40 yearly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>NEE_CUT_XX</td>
+<td></td>
+<td>NEE CUT percentiles (approx. percentile indicated by XX, see doc.) calculated from the 40 estimates aggregated at the different time resolutions &#8212; XX = 05, 16, 25, 50, 75, 84, 95</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth percentile from 40 half-hourly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>XXth percentile from 40 daily NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>XXth percentile from 40 weekly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>XXth percentile from 40 monthly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>XXth percentile from 40 yearly NEE_CUT_XX</td>
+</tr>
+<tr>
+<td>NEE_VUT_XX</td>
+<td></td>
+<td>NEE VUT percentiles (approx. percentile indicated by XX, see doc.) calculated from the 40 estimates aggregated at the different time resolutions &#8212; XX = 05, 16, 25, 50, 75, 84, 95</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth percentile from 40 half-hourly NEE_VUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>XXth percentile from 40 daily NEE_VUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>XXth percentile from 40 weekly NEE_VUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>XXth percentile from 40 monthly NEE_VUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>XXth percentile from 40 yearly NEE_VUT_XX</td>
+</tr>
+<tr>
+<td>NEE_CUT_XX_QC</td>
+<td></td>
+<td>Quality flag for NEE_CUT_XX &#8212; XX = 05, 16, 25, 50, 75, 84, 95</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_VUT_XX_QC</td>
+<td></td>
+<td>Quality flag for NEE_VUT_XX &#8212; XX = 05, 16, 25, 50, 75, 84, 95</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>nondimensional</td>
+<td>0 = measured; 1 = good quality gapfill; 2 = medium; 3 = poor</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_NIGHT</td>
+<td></td>
+<td>Average nighttime NEE, from NEE_CUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from half-hourly data (where NIGHT is 1)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_NIGHT</td>
+<td></td>
+<td>Average nighttime NEE, from NEE_VUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from half-hourly data (where NIGHT is 1)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_NIGHT_SD</td>
+<td></td>
+<td>Standard Deviation of the nighttime NEE, from the NEE_CUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from half-hourly data (where NIGHT is 1)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from daily data</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_NIGHT_SD</td>
+<td></td>
+<td>Standard Deviation of the nighttime NEE, from the NEE_VUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from half-hourly data (where NIGHT is 1)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from daily data</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_NIGHT_QC</td>
+<td></td>
+<td>Quality flag for NEE_CUT_REF_NIGHT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_NIGHT_QC</td>
+<td></td>
+<td>Quality flag for NEE_VUT_REF_NIGHT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_NIGHT_RANDUNC</td>
+<td></td>
+<td>Random uncertainty of NEE_CUT_REF_NIGHT, from the random uncertainty of the single nighttime half-hours</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from random uncertainty of individual half-hours where NIGHT is 1 (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used to calculate the nighttime aggregation in the day.</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_NIGHT_RANDUNC</td>
+<td></td>
+<td>Random uncertainty of NEE_VUT_REF_NIGHT, from the random uncertainty of the single nighttime half-hours</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from random uncertainty of individual half-hours where NIGHT is 1 (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used to calculate the nighttime aggregation in the day.</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_NIGHT_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for NEE_CUT_REF_NIGHT, including random uncertainty and USTAR filtering uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_REF_NIGHT_RANDUNC^2 + ((NEE_CUT_84_NIGHT &#8211; NEE_CUT_16_NIGHT) / 2)^2)] for each day</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_REF_NIGHT_RANDUNC^2 + ((NEE_CUT_84_NIGHT &#8211; NEE_CUT_16_NIGHT) / 2)^2)] for each week</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_REF_NIGHT_RANDUNC^2 + ((NEE_CUT_84_NIGHT &#8211; NEE_CUT_16_NIGHT) / 2)^2)] for each month</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_REF_NIGHT_RANDUNC^2 + ((NEE_CUT_84_NIGHT &#8211; NEE_CUT_16_NIGHT) / 2)^2)] for each year</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_NIGHT_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for NEE_VUT_REF_NIGHT, including random uncertainty and USTAR filtering uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_REF_NIGHT_RANDUNC^2 + ((NEE_VUT_84_NIGHT &#8211; NEE_VUT_16_NIGHT) / 2)^2)] for each day</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_REF_NIGHT_RANDUNC^2 + ((NEE_VUT_84_NIGHT &#8211; NEE_VUT_16_NIGHT) / 2)^2)] for each week</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_REF_NIGHT_RANDUNC^2 + ((NEE_VUT_84_NIGHT &#8211; NEE_VUT_16_NIGHT) / 2)^2)] for each month</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_REF_NIGHT_RANDUNC^2 + ((NEE_VUT_84_NIGHT &#8211; NEE_VUT_16_NIGHT) / 2)^2)] for each year</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_DAY</td>
+<td></td>
+<td>Average daytime NEE, from NEE_CUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from half-hourly data (where NIGHT is 0)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_DAY</td>
+<td></td>
+<td>Average daytime NEE, from NEE_VUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from half-hourly data (where NIGHT is 0)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_DAY_SD</td>
+<td></td>
+<td>Standard Deviation of the daytime NEE, from the NEE_CUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from half-hourly data (where NIGHT is 0)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from daily data</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_DAY_SD</td>
+<td></td>
+<td>Standard Deviation of the daytime NEE, from the NEE_VUT_REF</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from half-hourly data (where NIGHT is 0)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from daily data</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_DAY_QC</td>
+<td></td>
+<td>Quality flag for NEE_CUT_REF_DAY</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_DAY_QC</td>
+<td></td>
+<td>Quality flag for NEE_VUT_REF_DAY</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_DAY_RANDUNC</td>
+<td></td>
+<td>Random uncertainty of NEE_CUT_REF_DAY, from the random uncertainty of the single daytime half-hours</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from random uncertainty of individual half-hours where NIGHT is 0 (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used to calculate the daytime aggregation in the day.</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_DAY_RANDUNC</td>
+<td></td>
+<td>Random uncertainty of NEE_VUT_REF_DAY, from the random uncertainty of the single daytime half-hours</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from random uncertainty of individual half-hours where NIGHT is 0 (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used to calculate the daytime aggregation in the day.</td>
+</tr>
+<tr>
+<td>NEE_CUT_REF_DAY_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for NEE_CUT_REF_DAY, including random uncertainty and USTAR filtering uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_REF_DAY_RANDUNC^2 + ((NEE_CUT_84_DAY &#8211; NEE_CUT_16_DAY) / 2)^2)] for each day</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_REF_DAY_RANDUNC^2 + ((NEE_CUT_84_DAY &#8211; NEE_CUT_16_DAY) / 2)^2)] for each week</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_REF_DAY_RANDUNC^2 + ((NEE_CUT_84_DAY &#8211; NEE_CUT_16_DAY) / 2)^2)] for each month</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_REF_DAY_RANDUNC^2 + ((NEE_CUT_84_DAY &#8211; NEE_CUT_16_DAY) / 2)^2)] for each year</td>
+</tr>
+<tr>
+<td>NEE_VUT_REF_DAY_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for NEE_VUT_REF_DAY, including random uncertainty and USTAR filtering uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_REF_DAY_RANDUNC^2 + ((NEE_VUT_84_DAY &#8211; NEE_VUT_16_DAY) / 2)^2)] for each day</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_REF_DAY_RANDUNC^2 + ((NEE_VUT_84_DAY &#8211; NEE_VUT_16_DAY) / 2)^2)] for each week</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_REF_DAY_RANDUNC^2 + ((NEE_VUT_84_DAY &#8211; NEE_VUT_16_DAY) / 2)^2)] for each month</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_REF_DAY_RANDUNC^2 + ((NEE_VUT_84_DAY &#8211; NEE_VUT_16_DAY) / 2)^2)] for each year</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_NIGHT</td>
+<td></td>
+<td>Average nighttime NEE, from NEE_CUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from half-hourly data (where NIGHT is 1)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_NIGHT</td>
+<td></td>
+<td>Average nighttime NEE, from NEE_VUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from half-hourly data (where NIGHT is 1)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_NIGHT_SD</td>
+<td></td>
+<td>Standard Deviation of the nighttime NEE, from the NEE_CUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from half-hourly data (where NIGHT is 1)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from daily data</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_NIGHT_SD</td>
+<td></td>
+<td>Standard Deviation of the nighttime NEE, from the NEE_VUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from half-hourly data (where NIGHT is 1)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from daily data</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_NIGHT_QC</td>
+<td></td>
+<td>Quality flag for NEE_CUT_USTAR50_NIGHT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_NIGHT_QC</td>
+<td></td>
+<td>Quality flag for NEE_VUT_USTAR50_NIGHT</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_NIGHT_RANDUNC</td>
+<td></td>
+<td>Random uncertainty of NEE_CUT_USTAR50_NIGHT, from the random uncertainty of the single nighttime half-hours</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from random uncertainty of individual half-hours where NIGHT is 1 (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used to calculate the nighttime aggregation in the day.</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_NIGHT_RANDUNC</td>
+<td></td>
+<td>Random uncertainty of NEE_VUT_USTAR50_NIGHT, from the random uncertainty of the single nighttime half-hours</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from random uncertainty of individual half-hours where NIGHT is 1 (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used to calculate the nighttime aggregation in the day.</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_NIGHT_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for NEE_CUT_USTAR50_NIGHT, including random uncertainty and USTAR filtering uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_NIGHT_RANDUNC^2 + ((NEE_CUT_84_NIGHT &#8211; NEE_CUT_16_NIGHT) / 2)^2)] for each day</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_NIGHT_RANDUNC^2 + ((NEE_CUT_84_NIGHT &#8211; NEE_CUT_16_NIGHT) / 2)^2)] for each week</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_NIGHT_RANDUNC^2 + ((NEE_CUT_84_NIGHT &#8211; NEE_CUT_16_NIGHT) / 2)^2)] for each month</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_NIGHT_RANDUNC^2 + ((NEE_CUT_84_NIGHT &#8211; NEE_CUT_16_NIGHT) / 2)^2)] for each year</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_NIGHT_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for NEE_VUT_USTAR50_NIGHT, including random uncertainty and USTAR filtering uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_USTAR50_NIGHT_RANDUNC^2 + ((NEE_VUT_84_NIGHT &#8211; NEE_VUT_16_NIGHT) / 2)^2)] for each day</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_USTAR50_NIGHT_RANDUNC^2 + ((NEE_VUT_84_NIGHT &#8211; NEE_VUT_16_NIGHT) / 2)^2)] for each week</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_USTAR50_NIGHT_RANDUNC^2 + ((NEE_VUT_84_NIGHT &#8211; NEE_VUT_16_NIGHT) / 2)^2)] for each month</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_VUT_USTAR50_NIGHT_RANDUNC^2 + ((NEE_VUT_84_NIGHT &#8211; NEE_VUT_16_NIGHT) / 2)^2)] for each year</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_DAY</td>
+<td></td>
+<td>Average daytime NEE, from NEE_CUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from half-hourly data (where NIGHT is 0)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_DAY</td>
+<td></td>
+<td>Average daytime NEE, from NEE_VUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from half-hourly data (where NIGHT is 0)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_DAY_SD</td>
+<td></td>
+<td>Standard Deviation of the daytime NEE, from the NEE_CUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from half-hourly data (where NIGHT is 0)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from daily data</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_DAY_SD</td>
+<td></td>
+<td>Standard Deviation of the daytime NEE, from the NEE_VUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from half-hourly data (where NIGHT is 0)</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from daily data</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_DAY_QC</td>
+<td></td>
+<td>Quality flag for NEE_CUT_USTAR50_DAY</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_DAY_QC</td>
+<td></td>
+<td>Quality flag for NEE_VUT_USTAR50_DAY</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_DAY_RANDUNC</td>
+<td></td>
+<td>Random uncertainty of NEE_CUT_USTAR50_DAY, from the random uncertainty of the single daytime half-hours</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from random uncertainty of individual half-hours where NIGHT is 0 (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used to calculate the daytime aggregation in the day.</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_DAY_RANDUNC</td>
+<td></td>
+<td>Random uncertainty of NEE_VUT_USTAR50_DAY, from the random uncertainty of the single daytime half-hours</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>from random uncertainty of individual half-hours where NIGHT is 0 (rand(i)) = [SQRT(SUM(rand(i)^2)) / n], where n is the number of half-hours used to calculate the daytime aggregation in the day.</td>
+</tr>
+<tr>
+<td>NEE_CUT_USTAR50_DAY_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for NEE_CUT_USTAR50_DAY, including random uncertainty and USTAR filtering uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_DAY_RANDUNC^2 + ((NEE_CUT_84_DAY &#8211; NEE_CUT_16_DAY) / 2)^2)] for each day</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_DAY_RANDUNC^2 + ((NEE_CUT_84_DAY &#8211; NEE_CUT_16_DAY) / 2)^2)] for each week</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_DAY_RANDUNC^2 + ((NEE_CUT_84_DAY &#8211; NEE_CUT_16_DAY) / 2)^2)] for each month</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>[SQRT(NEE_CUT_USTAR50_DAY_RANDUNC^2 + ((NEE_CUT_84_DAY &#8211; NEE_CUT_16_DAY) / 2)^2)] for each year</td>
+</tr>
+<tr>
+<td>NEE_VUT_USTAR50_DAY_JOINTUNC</td>
+<td></td>
+<td>Joint uncertainty estimation for NEE_VUT_USTAR50_DAY, including random uncertainty and USTAR filtering uncertainty</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SQRT(NEE_VUT_USTAR50_DAY_RANDUNC^2 + ((NEE_VUT_84_DAY &#8211; NEE_VUT_16_DAY) / 2)^2) for each day</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SQRT(NEE_VUT_USTAR50_DAY_RANDUNC^2 + ((NEE_VUT_84_DAY &#8211; NEE_VUT_16_DAY) / 2)^2) for each week</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SQRT(NEE_VUT_USTAR50_DAY_RANDUNC^2 + ((NEE_VUT_84_DAY &#8211; NEE_VUT_16_DAY) / 2)^2) for each month</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SQRT(NEE_VUT_USTAR50_DAY_RANDUNC^2 + ((NEE_VUT_84_DAY &#8211; NEE_VUT_16_DAY) / 2)^2) for each year</td>
+</tr>
+<tr>
+<td>NEE_CUT_XX_NIGHT</td>
+<td></td>
+<td>NEE CUT nighttime percentiles (approx. percentile indicated by XX, see doc.) calculated from the 40 estimates aggregated at the different time resolutions &#8212; XX = 05, 16, 25, 50, 75, 84, 95</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth nighttime percentile from 40 daily NEE_CUT_XX_NIGHT</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth nighttime percentile from 40 weekly NEE_CUT_XX_NIGHT</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth nighttime percentile from 40 monthly NEE_CUT_XX_NIGHT</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth nighttime percentile from 40 yearly NEE_CUT_XX_NIGHT</td>
+</tr>
+<tr>
+<td>NEE_VUT_XX_NIGHT</td>
+<td></td>
+<td>NEE VUT nighttime percentiles (approx. percentile indicated by XX, see doc.) calculated from the 40 estimates aggregated at the different time resolutions &#8212; XX = 05, 16, 25, 50, 75, 84, 95</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth nighttime percentile from 40 daily NEE_VUT_XX_NIGHT</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth nighttime percentile from 40 weekly NEE_VUT_XX_NIGHT</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth nighttime percentile from 40 monthly NEE_VUT_XX_NIGHT</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth nighttime percentile from 40 yearly NEE_VUT_XX_NIGHT</td>
+</tr>
+<tr>
+<td>NEE_CUT_XX_NIGHT_QC</td>
+<td></td>
+<td>Quality flag for NEE_CUT_XX_NIGHT &#8212; XX = 05, 16, 25, 50, 75, 84, 95</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_VUT_XX_NIGHT_QC</td>
+<td></td>
+<td>Quality flag for NEE_VUT_XX_NIGHT &#8212; XX = 05, 16, 25, 50, 75, 84, 95</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_CUT_XX_DAY</td>
+<td></td>
+<td>NEE CUT daytime percentiles (approx. percentile indicated by XX, see doc.) calculated from the 40 estimates aggregated at the different time resolutions &#8212; XX = 05, 16, 25, 50, 75, 84, 95</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth daytime percentile from 40 daily NEE_CUT_XX_DAY</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth daytime percentile from 40 weekly NEE_CUT_XX_DAY</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth daytime percentile from 40 monthly NEE_CUT_XX_DAY</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth daytime percentile from 40 yearly NEE_CUT_XX_DAY</td>
+</tr>
+<tr>
+<td>NEE_VUT_XX_DAY</td>
+<td></td>
+<td>NEE VUT daytime percentiles (approx. percentile indicated by XX, see doc.) calculated from the 40 estimates aggregated at the different time resolutions &#8212; XX = 05, 16, 25, 50, 75, 84, 95</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth daytime percentile from 40 daily NEE_VUT_XX_DAY</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth daytime percentile from 40 weekly NEE_VUT_XX_DAY</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth daytime percentile from 40 monthly NEE_VUT_XX_DAY</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>umolCO2 m-2 s-1</td>
+<td>XXth daytime percentile from 40 yearly NEE_VUT_XX_DAY</td>
+</tr>
+<tr>
+<td>NEE_CUT_XX_DAY_QC</td>
+<td></td>
+<td>Quality flag for NEE_CUT_XX_DAY &#8212; XX = 05, 16, 25, 50, 75, 84, 95</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td>NEE_VUT_XX_DAY_QC</td>
+<td></td>
+<td>Quality flag for NEE_VUT_XX_DAY &#8212; XX = 05, 16, 25, 50, 75, 84, 95</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data</td>
+</tr>
+<tr>
+<td>WW-YY</td>
+<td>nondimensional</td>
+<td>fraction between 0-1, indicating percentage of measured and good quality gapfill data (average from daily data)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>PARTITIONING</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>NIGHTTIME</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>RECO_NT_VUT_REF</td>
+<td></td>
+<td>Ecosystem Respiration, from Nighttime partitioning method, reference selected from RECO versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>RECO_NT_VUT_USTAR50</td>
+<td></td>
+<td>Ecosystem Respiration, from Nighttime partitioning method, based on NEE_VUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>RECO_NT_VUT_MEAN</td>
+<td></td>
+<td>Ecosystem Respiration, from Nighttime partitioning method, average from RECO versions, each from corresponding NEE_VUT_XX version</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from 40 half-hourly RECO_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 daily RECO_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 weekly RECO_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 monthly RECO_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>average from 40 yearly RECO_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>RECO_NT_VUT_SE</td>
+<td></td>
+<td>Standard Error for Ecosystem Respiration, calculated as (SD(RECO_NT_VUT_XX) / SQRT(40))</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SE from 40 half-hourly RECO_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 daily RECO_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 weekly RECO_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 monthly RECO_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>SE from 40 yearly RECO_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>RECO_NT_VUT_XX</td>
+<td></td>
+<td>Ecosystem Respiration, from Nighttime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>RECO_NT_CUT_REF</td>
+<td></td>
+<td>Ecosystem Respiration, from Nighttime partitioning method, reference selected from RECO versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>RECO_NT_CUT_USTAR50</td>
+<td></td>
+<td>Ecosystem Respiration, from Nighttime partitioning method, based on NEE_CUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>RECO_NT_CUT_MEAN</td>
+<td></td>
+<td>Ecosystem Respiration, from Nighttime partitioning method, average from RECO versions, each from corresponding NEE_CUT_XX version</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from 40 half-hourly RECO_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 daily RECO_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 weekly RECO_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 monthly RECO_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>average from 40 yearly RECO_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>RECO_NT_CUT_SE</td>
+<td></td>
+<td>Standard Error for Ecosystem Respiration, calculated as (SD(RECO_NT_CUT_XX) / SQRT(40))</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SE from 40 half-hourly RECO_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 daily RECO_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 weekly RECO_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 monthly RECO_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>SE from 40 yearly RECO_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>RECO_NT_CUT_XX</td>
+<td></td>
+<td>Ecosystem Respiration, from Nighttime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>GPP_NT_VUT_REF</td>
+<td></td>
+<td>Gross Primary Production, from Nighttime partitioning method, reference selected from GPP versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>GPP_NT_VUT_USTAR50</td>
+<td></td>
+<td>Gross Primary Production, from Nighttime partitioning method, based on NEE_VUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>GPP_NT_VUT_MEAN</td>
+<td></td>
+<td>Gross Primary Production, from Nighttime partitioning method, average from GPP versions, each from corresponding NEE_VUT_XX version</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from 40 half-hourly GPP_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 daily GPP_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 weekly GPP_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 monthly GPP_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>average from 40 yearly GPP_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>GPP_NT_VUT_SE</td>
+<td></td>
+<td>Standard Error for Gross Primary Production, calculated as (SD(GPP_NT_VUT_XX) / SQRT(40))</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SE from 40 half-hourly GPP_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 daily GPP_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 weekly GPP_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 monthly GPP_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>SE from 40 yearly GPP_NT_VUT_XX</td>
+</tr>
+<tr>
+<td>GPP_NT_VUT_XX</td>
+<td></td>
+<td>Gross Primary Production, from Nighttime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>GPP_NT_CUT_REF</td>
+<td></td>
+<td>Gross Primary Production, from Nighttime partitioning method, reference selected from GPP versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>GPP_NT_CUT_USTAR50</td>
+<td></td>
+<td>Gross Primary Production, from Nighttime partitioning method, based on NEE_CUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>GPP_NT_CUT_MEAN</td>
+<td></td>
+<td>Gross Primary Production, from Nighttime partitioning method, average from GPP versions, each from corresponding NEE_CUT_XX version</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from 40 half-hourly GPP_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 daily GPP_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 weekly GPP_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 monthly GPP_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>average from 40 yearly GPP_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>GPP_NT_CUT_SE</td>
+<td></td>
+<td>Standard Error for Gross Primary Production, calculated as (SD(GPP_NT_CUT_XX) / SQRT(40))</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SE from 40 half-hourly GPP_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 daily GPP_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 weekly GPP_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 monthly GPP_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>SE from 40 yearly GPP_NT_CUT_XX</td>
+</tr>
+<tr>
+<td>GPP_NT_CUT_XX</td>
+<td></td>
+<td>Gross Primary Production, from Nighttime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>DAYTIME</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>RECO_DT_VUT_REF</td>
+<td></td>
+<td>Ecosystem Respiration, from Daytime partitioning method, reference selected from RECO versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>RECO_DT_VUT_USTAR50</td>
+<td></td>
+<td>Ecosystem Respiration, from Daytime partitioning method, based on NEE_VUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>RECO_DT_VUT_MEAN</td>
+<td></td>
+<td>Ecosystem Respiration, from Daytime partitioning method, average from RECO versions, each from corresponding NEE_VUT_XX version</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from 40 half-hourly RECO_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 daily RECO_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 weekly RECO_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 monthly RECO_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>average from 40 yearly RECO_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>RECO_DT_VUT_SE</td>
+<td></td>
+<td>Standard Error for Ecosystem Respiration, calculated as (SD(RECO_DT_VUT_XX) / SQRT(40))</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SE from 40 half-hourly RECO_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 daily RECO_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 weekly RECO_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 monthly RECO_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>SE from 40 yearly RECO_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>RECO_DT_VUT_XX</td>
+<td></td>
+<td>Ecosystem Respiration, from Daytime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>RECO_DT_CUT_REF</td>
+<td></td>
+<td>Ecosystem Respiration, from Daytime partitioning method, reference selected from RECO versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>RECO_DT_CUT_USTAR50</td>
+<td></td>
+<td>Ecosystem Respiration, from Daytime partitioning method, based on NEE_CUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>RECO_DT_CUT_MEAN</td>
+<td></td>
+<td>Ecosystem Respiration, from Daytime partitioning method, average from RECO versions, each from corresponding NEE_CUT_XX version</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from 40 half-hourly RECO_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 daily RECO_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 weekly RECO_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 monthly RECO_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>average from 40 yearly RECO_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>RECO_DT_CUT_SE</td>
+<td></td>
+<td>Standard Error for Ecosystem Respiration, calculated as (SD(RECO_DT_CUT_XX) / SQRT(40))</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SE from 40 half-hourly RECO_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 daily RECO_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 weekly RECO_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 monthly RECO_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>SE from 40 yearly RECO_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>RECO_DT_CUT_XX</td>
+<td></td>
+<td>Ecosystem Respiration, from Daytime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>GPP_DT_VUT_REF</td>
+<td></td>
+<td>Gross Primary Production, from Daytime partitioning method, reference selected from GPP versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>GPP_DT_VUT_USTAR50</td>
+<td></td>
+<td>Gross Primary Production, from Daytime partitioning method, based on NEE_VUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>GPP_DT_VUT_MEAN</td>
+<td></td>
+<td>Gross Primary Production, from Daytime partitioning method, average from GPP versions, each from corresponding NEE_VUT_XX version</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from 40 half-hourly GPP_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 daily GPP_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 weekly GPP_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 monthly GPP_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>average from 40 yearly GPP_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>GPP_DT_VUT_SE</td>
+<td></td>
+<td>Standard Error for Gross Primary Production, calculated as (SD(GPP_DT_VUT_XX) / SQRT(40))</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SE from 40 half-hourly GPP_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 daily GPP_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 weekly GPP_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 monthly GPP_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>SE from 40 yearly GPP_DT_VUT_XX</td>
+</tr>
+<tr>
+<td>GPP_DT_VUT_XX</td>
+<td></td>
+<td>Gross Primary Production, from Daytime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>GPP_DT_CUT_REF</td>
+<td></td>
+<td>Gross Primary Production, from Daytime partitioning method, reference selected from GPP versions using model efficiency (MEF). The MEF analysis is repeated for each time aggregation</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>GPP_DT_CUT_USTAR50</td>
+<td></td>
+<td>Gross Primary Production, from Daytime partitioning method, based on NEE_CUT_USTAR50</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>GPP_DT_CUT_MEAN</td>
+<td></td>
+<td>Gross Primary Production, from Daytime partitioning method, average from GPP versions, each from corresponding NEE_CUT_XX version</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>average from 40 half-hourly GPP_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 daily GPP_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 weekly GPP_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>average from 40 monthly GPP_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>average from 40 yearly GPP_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>GPP_DT_CUT_SE</td>
+<td></td>
+<td>Standard Error for Gross Primary Production, calculated as (SD(GPP_DT_CUT_XX) / SQRT(40))</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td>SE from 40 half-hourly GPP_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 daily GPP_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>WW</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 weekly GPP_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>MM</td>
+<td>gC m-2 d-1</td>
+<td>SE from 40 monthly GPP_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>SE from 40 yearly GPP_DT_CUT_XX</td>
+</tr>
+<tr>
+<td>GPP_DT_CUT_XX</td>
+<td></td>
+<td>Gross Primary Production, from Daytime partitioning method (with XX = 05, 16, 25, 50, 75, 84, 95)</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><strong>SUNDOWN</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>RECO_SR</td>
+<td></td>
+<td>Ecosystem Respiration, from Sundown Respiration partitioning method</td>
+</tr>
+<tr>
+<td>HH</td>
+<td>umolCO2 m-2 s-1</td>
+<td></td>
+</tr>
+<tr>
+<td>DD</td>
+<td>gC m-2 d-1</td>
+<td>calculated from half-hourly data</td>
+</tr>
+<tr>
+<td>WW-MM</td>
+<td>gC m-2 d-1</td>
+<td>average from daily data</td>
+</tr>
+<tr>
+<td>YY</td>
+<td>gC m-2 y-1</td>
+<td>sum from daily data</td>
+</tr>
+<tr>
+<td>RECO_SR_N</td>
+<td></td>
+<td>Fraction between 0-1, indicating the percentage of data avaiable in the averaging period to parametrize the respiration model</td>
+</tr>
+<tr>
+<td>HH</td>
+<td></td>
+<td>not produced</td>
+</tr>
+<tr>
+<td>DD-YY</td>
+<td>nondimensional</td>
+<td>percentage of data available</td>
+</tr>
+</tbody>
+</table>
