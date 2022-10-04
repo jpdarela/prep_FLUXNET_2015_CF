@@ -1,7 +1,41 @@
+from copy import deepcopy
 import numpy as np
+import cftime
+import pandas as pd
+import matplotlib.pyplot as plt
+from netCDF4 import Dataset
 
+# GLOBAL
 Pa2kPa = 1e-3
+idx = pd.date_range("19890101", "20141231", freq="D")
+calendar = 'standard'
+units = "days since 1989-01-01T00:00:00"
+exp_st = cftime.date2num(cftime.DatetimeProlepticGregorian(2001, 1, 1),
+                            units=units, calendar=calendar)
 
+# modifiers
+def mod_pr(pr:np.array=None)->np.array:
+    tmp = deepcopy(pr) #np.zeros(shape=idx.size, dtype='f4') + 20    
+    # reduce pr x %
+    x = 0.20
+    for index, day in enumerate(idx):
+        if index >= exp_st:
+            if day.month in [6, 7, 8]:
+                tmp[:, index] -= tmp[:, index] * x
+            
+    return "SSP3-7.0_NearTerm-", tmp
+
+def mod_tas(ts:np.array=None)->np.array:
+    tmp = deepcopy(ts) #np.zeros(shape=idx.size, dtype='f4') + 20    
+    # inbrease ts x dcgC
+    x = 2
+    for index, day in enumerate(idx):
+        if index >= exp_st:
+            if day.month in [6, 7, 8]:
+                tmp[:,index] += x            
+    return "SSP3-7.0_NearTerm-", tmp
+
+#vectorized
 #Converts precipitation from mm/day (FLUXNET) to kg m-2 s-1 (SI) :: assume 1 mm as 1 kg m-2
 convert_pr = np.vectorize(lambda P: P * 1.5741e-5)
 
@@ -70,3 +104,8 @@ def VPD2RH(Tair:np.array, VPD:np.array) -> np.array:
     # Translated to python from the bigleaf R package
     esat =  Vsat_slope(Tair)[0]
     return 1.0 - (VPD / esat)
+
+
+if __name__ == "__main__":
+
+    ds = mod_pr

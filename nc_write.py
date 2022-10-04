@@ -6,8 +6,7 @@ from netCDF4 import Dataset
 import cftime
 import numpy as np
 import pandas as pd
-from conversions import *
-import matplotlib.pyplot as plt
+from conversions import convert_pr, convert_ps, convert_ta, convert_vpd, VPD2RH
 
 
 FLUXNET_REF = """Pastorello, G., Trotta, C., Canfora, E. et al. The FLUXNET2015 dataset and the ONEFlux processing pipeline for eddy covariance data. Sci Data 7, 225 (2020). https://doi.org/10.1038/s41597-020-0534-3"""
@@ -128,14 +127,14 @@ def get_aet(site):
     mle *= 1e-6 # convert to MJ m-2 s-1
     return (mle / calc_LHV(tas)) * 2.62974e6 ## kg m-2 month-1
 
-def create_arrs(var):
+def create_arrs(var, mod_var=None):
     lat = []
     lon = []
     fdata = []
     names = []
     counter = 0
     for k, v in SITES_COORDINATES.items():
-        print(k, v)
+        # print(k, v)
         if k == 'SITE':
             continue
         counter += 1
@@ -150,6 +149,10 @@ def create_arrs(var):
 
     for x in range(counter):
         out_data[x, :] = get_data(fdata[x], var)
+    
+           
+    if mod_var is not None:
+            out_data = mod_var(out_data)
 
     return out_data, np.concatenate(lat), np.concatenate(lon), np.array(names, dtype="<U7")
 
@@ -158,7 +161,7 @@ def create_gridlist(fname):
         pass
     with open(f"{fname}.txt", 'a', encoding="utf-8") as fh:
         for k, v in SITES_COORDINATES.items():
-            print(k, v)
+            # print(k, v)
             if k == 'SITE':
                 continue
             lat = v[0][0]
@@ -332,7 +335,7 @@ def cf_timeseries(fname = None,
 
     dset.close()
 
-def write_site_nc(VAR):
+def write_site_nc(VAR, mod=None):
     
     """write FLUXNET2015 FULLSET Variable to a netCDF4 file """
     start = "19890101"
@@ -376,12 +379,10 @@ def write_site_nc(VAR):
         lo = lon
 
         fname00 = f"{VAR}_FLUXNET2015"
-        f3 = 'out0'
 
-        # single_timeseries(fname=fname00, arr=arr, var=VAR, site=SITE,unit=units,
-        #                descr=descr, time=time_dict, la=la, lo=lo,
-        #                reference=FLUXNET_REF)
-
+        if mod is not None:
+            ID, arr = mod(arr)
+            fname00 = f"{VAR}_{ID}_FLUXNET2015"
 
         timeseries(fname=fname00, arr=arr, var=VAR, unit=units, names=names,
                        descr=descr, time=time_dict, la=la, lo=lo,
@@ -461,31 +462,5 @@ def write_ref_data(VAR, site):
                     descr=descr, time=time_dict, la=la, lo=lo,
                     reference=FLUXNET_REF)
 
-
 if __name__ == "__main__":
     pass
-    # write_site_nc("tas")
-    # create_gridlist('./test')
-    # dt = get_ref_data("Hai", "reco")
-    # tm = get_timestaps("Hai")
-
-
-
-# # Actual Data
-# SITES_COORDINATES = {'SITE': ['Latitude', 'Longitude', 'name', 'filepath'],
-#                      'Dav': [np.array([46.81], 'f4'), np.array([9.85], 'f4'), 'FLX-Dav',
-#                              './FLX_CH-Dav_FLUXNET2015_FULLSET_1997-2014_1-4/FLX_CH-Dav_FLUXNET2015_FULLSET_DD_1997-2014_1-4.csv'],
-#                      'Tha': [np.array([50.96], 'f4'), np.array([13.56], 'f4'), 'FLX-Tha',
-#                              './FLX_DE-Tha_FLUXNET2015_FULLSET_1996-2014_1-4/FLX_DE-Tha_FLUXNET2015_FULLSET_DD_1996-2014_1-4.csv'],
-#                      'Hai': [np.array([51.08], 'f4'), np.array([10.45], 'f4'), 'FLX-Hai',
-#                              './FLX_DE-Hai_FLUXNET2015_FULLSET_1996-2014_1-4/FLX_DE-Hai_FLUXNET2015_FULLSET_DD_1996-2014_1-4.csv']}
-
-# FLUXNET_FULLSET_VARS = {'tas':  ["TA_F_MDS_DAY", "Air temperature, gapfilled using MDS method", "K", 'air_temperature'], # FLUXNET celsius
-#                         'rsds': ["SW_IN_F_MDS", "Shortwave radiation, incoming, gapfilled using MDS", 'W m-2', "surface_downwelling_shortwave_flux_in_air"],
-#                         'vpd':  ['VPD_F_MDS', "Vapor Pressure Deficit gapfilled using MDS method", "kPa", "vpd"], # FLUXNET hPa
-#                         'ps': ["PA_F","Atmospheric Pressure","Pa", "surface_air_pressure"], # FLUXNET kPa
-#                         'pr': ["P_F","Precipitation","kg m-2 s-1", "precipitation_flux"], # FLUXNET mm/day
-#                         'wind': ["WS_F","Wind Speed","m s-1", "wind_speed"], # Aparently the same
-#                         'PPFD': ["PPFD_IN","Photosynthetic photon flux density, incoming","µmol m-2 s-1", "PPFD"],
-#                         'co2': ["CO2_F_MDS","CO2 mole fraction, gapfilled with MDS", "µmol mol-1", "CONVERT TO TEXT\n<year> <value>\n"],
-#                         'hurs': ["RH_F","Relative humidity, range 0-100", "%", 'relative_humidity']}
